@@ -5,7 +5,7 @@ const fullName = (firstName:String, lastName:string):string => {
   return  `${firstName} ${lastName}`
 }
 
-const name = fullName('Tony', 'Star');
+const name = fullName('Tony', 'Stark');
 console.log(name);
 
 

@@ -11,7 +11,7 @@
     /* age: 33, */
     powers: ["volar", "fuerza", "velocidad"],
     /* getName() {
-      return this.name;
-    }, */
+	return this.name;
+	}, */
   };
 })();

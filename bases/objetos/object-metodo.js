@@ -3,15 +3,15 @@
     let flash = {
         name: "Barry Allen",
         age: 24,
-        powers: ["Super velocidad", "viajar en el tiempo"],
+        powers: ["Velocidad", "Viajar en el tiempo"],
     };
-    /* Asignar nuevos valores al objeto */
+    // Asignar nuevos valores al objeto
     flash = {
         name: "clark ken",
-        /* age: 33, */
+        //age:21
         powers: ["volar", "fuerza", "velocidad"],
-        /* getName() {
-        return this.name;
-        }, */
+        getName() {
+            return this.name;
+        },
     };
 })();

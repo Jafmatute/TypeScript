@@ -36,6 +36,15 @@ var __rest = (this && this.__rest) || function (s, e) {
     printAvengers(avengers);
 })();
 (() => {
+    const ironman = { name: "Iron Man", weapon: "Armorsuit" };
+    const hulk = { name: "Hulk", weapon: "Force" };
+    const spiderman = { name: "SpiderMan", weapon: "Spider webs" };
+    const avengers = [ironman, hulk, spiderman];
+    for (const avenger of avengers) {
+        console.log(avenger.name);
+    }
+})();
+(() => {
     /* console.log(a); */
     let a = "a";
     const NOMBRE = "Josue Flores";

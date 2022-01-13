@@ -11,6 +11,15 @@ var __rest = (this && this.__rest) || function (s, e) {
     return t;
 };
 (() => {
+    const avengersArr = ["Capitan America", "Ironman", "Hulk"];
+    //tupla
+    const avengersTupla = ["ironman", true, 120];
+    const [, ironman] = avengersArr;
+    console.log(ironman);
+    const [iron, bol, num] = avengersTupla;
+    console.log(bol);
+})();
+(() => {
     const avengers = {
         nick: "samuel n. Jackson",
         ironman: "Robert Downey Jr",

@@ -1,17 +1,17 @@
 (() => {
   class Avenger {
-    private name: string;
-    public team?: string;
-    realName?: string;
-    static avgAge: number;
+    /* private name: string; */
+    /* private team: string; */
+    /* public realName: string; */
 
-    constructor(name: string, team?: string, realName?: string) {
-      this.name = name;
-      this.team = team;
-      this.realName = realName;
-    }
+    static avgAge: number = 35;
+
+    constructor(
+      private name: string,
+      private team?: string,
+      public realName?: string
+    ) {}
   }
-
   const atman: Avenger = new Avenger("Atman", "Capitan");
   console.log(atman);
 })();

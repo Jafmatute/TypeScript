@@ -1,34 +1,26 @@
 "use strict";
 (() => {
-    /*
-     * No se puede crear instancias de una clase abstract
-     * Cascaron para otras clases extends
-     * otras clases pueden tener sus propias funciones
-     * asegurase que cumplan con las caracteristicas de su clase abstract
-     * */
-    class Mutante {
-        constructor(name, realName) {
+    class Apocalipsis {
+        constructor(name) {
             this.name = name;
-            this.realName = realName;
+        }
+        static callApocalipsis() {
+            if (!Apocalipsis.instance) {
+                Apocalipsis.instance = new Apocalipsis("yo soy un apocalipsis, yeyey");
+            }
+            return Apocalipsis.instance;
+        }
+        changeName(newName) {
+            this.name = newName;
         }
     }
-    class Xmen extends Mutante {
-        salvarMundo() {
-            return `Mundo a salvo!!`;
-        }
-    }
-    class Villian extends Mutante {
-        conquistarMundo() {
-            return `Mundo conquistado`;
-        }
-    }
-    const wolverine = new Xmen("Wolverine", "Logan");
-    const magneto = new Villian("Magneto", "Magnus");
-    console.log(wolverine.salvarMundo());
-    console.log(magneto.conquistarMundo());
-    const printName = (character) => {
-        console.log(character.name);
-    };
-    printName(wolverine);
+    const apocalipsis = Apocalipsis.callApocalipsis();
+    const apocalipsis2 = Apocalipsis.callApocalipsis();
+    const apocalipsis3 = Apocalipsis.callApocalipsis();
+    apocalipsis.changeName("Xavier");
+    /* const apocalipsis = new Apocalipsis("soy apocalipsis, yeye");
+    const apocalipsis2 = new Apocalipsis("soy apocalipsis2, yeye");
+    const apocalipsis3 = new Apocalipsis("soy apocalipsis3, yeye"); */
+    console.log(apocalipsis, apocalipsis2, apocalipsis3);
 })();
 //# sourceMappingURL=main.js.map

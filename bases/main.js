@@ -22,4 +22,32 @@
     console.log(atman.bio());
     console.log(Avenger.getAvgAge());
 })();
+(() => {
+    class Avenger {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            console.log(`Constructor Avengers llamado`);
+        }
+        /*
+         * private solo se puede acceder desde la clase
+         * protected  Accede desde la clase y las clases eztendidas
+         * */
+        getFullName() {
+            return `${this.name} ${this.realName}`;
+        }
+    }
+    class Xmen extends Avenger {
+        constructor(name, realName, isMutant) {
+            super(name, realName);
+            console.log(`Constructor del Xmen`);
+        }
+        getFullNameXmen() {
+            console.log(super.getFullName());
+        }
+    }
+    const wolverine = new Xmen("Wolwerine", "Logan", true);
+    console.log(wolverine);
+    wolverine.getFullNameXmen();
+})();
 //# sourceMappingURL=main.js.map

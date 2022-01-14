@@ -14,11 +14,16 @@
         name: "Josue",
         age: 29,
         address: { id: 125, zip: "Ky SA", city: "ottawa" },
+        getFullAddress(id) {
+            var _a;
+            return `${(_a = this.address) === null || _a === void 0 ? void 0 : _a.city}`;
+        },
     };
     const cliente2 = {
         name: "Luz",
         age: 19,
         /* address: { id: 126, zip: "CX ZA", city: "otawwa" }, */
     };
+    console.log(client);
 })();
 //# sourceMappingURL=main.js.map

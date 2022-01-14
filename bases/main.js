@@ -1,53 +1,13 @@
 "use strict";
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
+(() => {
+    class Avenger {
+        constructor(name, team, realName) {
+            this.name = name;
+            this.team = team;
+            this.realName = realName;
         }
-    return t;
-};
-(() => {
-    const avengersArr = ["Capitan America", "Ironman", "Hulk"];
-    //tupla
-    const avengersTupla = ["ironman", true, 120];
-    const [, ironman] = avengersArr;
-    console.log(ironman);
-    const [iron, bol, num] = avengersTupla;
-    console.log(bol);
-})();
-(() => {
-    const avengers = {
-        nick: "samuel n. Jackson",
-        ironman: "Robert Downey Jr",
-        vision: "Paul Bettany",
-        activos: true,
-        poder: 2000,
-    };
-    const { vision, poder } = avengers;
-    console.log(`SuperHeroe: ${vision.toUpperCase()} tiene un poder de: ${poder.toFixed(2)}`);
-    const printAvengers = (_a) => {
-        var { ironman } = _a, rest = __rest(_a, ["ironman"]);
-        console.log(rest);
-    };
-    printAvengers(avengers);
-})();
-(() => {
-    const ironman = { name: "Iron Man", weapon: "Armorsuit" };
-    const hulk = { name: "Hulk", weapon: "Force" };
-    const spiderman = { name: "SpiderMan", weapon: "Spider webs" };
-    const avengers = [ironman, hulk, spiderman];
-    for (const avenger of avengers) {
-        console.log(avenger.name);
     }
-})();
-(() => {
-    /* console.log(a); */
-    let a = "a";
-    const NOMBRE = "Josue Flores";
-    const getName = function () { };
+    const atman = new Avenger("Atman", "Capitan");
+    console.log(atman);
 })();
 //# sourceMappingURL=main.js.map

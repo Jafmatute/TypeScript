@@ -1,29 +1,12 @@
 "use strict";
-(() => {
-    let flash = { name: "Barry Allen", age: 28, powers: [1, 2, 3] };
-    let superman = {
-        name: "Clark ken",
-        powers: [1, 2, 3, 4],
-        getName() {
-            return `${this.name}`;
-        },
+var Validations;
+(function (Validations) {
+    Validations.validateText = (text) => {
+        return text.length > 3 ? true : false;
     };
-})();
-(() => {
-    const client = {
-        name: "Josue",
-        age: 29,
-        address: { id: 125, zip: "Ky SA", city: "ottawa" },
-        getFullAddress(id) {
-            var _a;
-            return `${(_a = this.address) === null || _a === void 0 ? void 0 : _a.city}`;
-        },
+    Validations.validateDate = (fecha) => {
+        return isNaN(fecha.valueOf()) ? false : true;
     };
-    const cliente2 = {
-        name: "Luz",
-        age: 19,
-        /* address: { id: 126, zip: "CX ZA", city: "otawwa" }, */
-    };
-    console.log(client);
-})();
+})(Validations || (Validations = {}));
+console.log(Validations.validateText("Jos"));
 //# sourceMappingURL=main.js.map

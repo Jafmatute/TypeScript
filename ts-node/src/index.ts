@@ -4,8 +4,8 @@ import powers, { Power } from "./data/powers";
 
 const Hero = 124;
 
-const ironman = new SuperHero("IronMan", 123, 22);
+const ironman = new SuperHero("IronMan", 1, 22);
 /* const ironman = new HeroClass.Hero("IronMan", 123, 22); */
-console.log(ironman);
+console.log(ironman.power);
 
 console.log(powers);

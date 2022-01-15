@@ -1,5 +1,11 @@
-import { Hero } from "./classes/Hero";
+import { Hero as SuperHero, Hero2 } from "./classes/Hero";
+import powers, { Power } from "./data/powers";
+/* import * as HeroClass from "./classes/Hero"; */
 
-const ironman = new Hero("IronMan", 123, 22);
+const Hero = 124;
 
+const ironman = new SuperHero("IronMan", 123, 22);
+/* const ironman = new HeroClass.Hero("IronMan", 123, 22); */
 console.log(ironman);
+
+console.log(powers);

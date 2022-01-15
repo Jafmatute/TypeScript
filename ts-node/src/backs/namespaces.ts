@@ -1,5 +1,5 @@
-import { Hero as SuperHero, Hero2 } from "./classes/Hero";
-import powers, { Power } from "./data/powers";
+import { Hero as SuperHero, Hero2 } from "../classes/Hero";
+import powers, { Power } from "../data/powers";
 /* import * as HeroClass from "./classes/Hero"; */
 
 const Hero = 124;

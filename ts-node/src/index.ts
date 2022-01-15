@@ -1,8 +1,8 @@
 import { getPokemon } from "./generics/get-pokemon";
 
 getPokemon(4)
-  .then((rsp) => {
-    console.log(rsp);
+  .then((pokemon) => {
+    console.log(pokemon.sprites.front_default);
   })
   .catch((error) => {
     console.log(error);
